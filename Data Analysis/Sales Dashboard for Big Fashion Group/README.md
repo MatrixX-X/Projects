@@ -1,10 +1,10 @@
-<strong>Requirements: </strong><br />
+Requirements: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excel
           
-<strong>Dataset:</strong><br />
+Dataset:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data (Before), Final Output (After)
       
-<strong>About:</strong> <br />
+About: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Sales Dashboard for Big Fashion Group project is a data analysis project that involves creating a dashboard to visualize sales data for the company. The dashboard is built using Excel, a popular spreadsheet software that allows for the manipulation and visualization of data.
 
 The project aims to provide the management team of Big Fashion Group with an overview of the company's sales performance across various product categories and regions. The dashboard provides insights into key performance indicators (KPIs) such as revenue, profit margin, and sales growth.

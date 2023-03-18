@@ -13,7 +13,6 @@ In the CSS code, we will style the web page to make it look more appealing and u
 
 In the JavaScript code, we will create an array of dad jokes that the generator will randomly choose from when the user clicks the generate button. We will then use JavaScript to display the generated joke in the appropriate section of the web page. 
 
-Overall, the dad joke generator project is a fun and lighthearted way to practice your HTML, CSS, and JavaScript skills. 
 
 
 
