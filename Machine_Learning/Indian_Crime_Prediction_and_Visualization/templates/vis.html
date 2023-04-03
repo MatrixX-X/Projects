@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>	
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Crime Prediction System | Visualizations</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="/static/accordion.css">
+        <link rel="stylesheet" href="/static/animate.css">
+        
+        
+	</head>
+
+	<body>
+
+
+		<header class = "header1">
+            <div class = "box1">
+                <a href="home.html"><img src="{{url_for('static', filename='images/logo_trial.png')}}" height = "115vh" width = "90%" alt="Banner Image"/></a>
+            </div>
+            <div class = "box2">
+                <h1>Indian <span class="highlight">Crime</span> Analysis</h1>
+            </div>
+            <div class = "box3">
+                <nav>
+                    <ul>
+                        <li> <a href="About.html">ABOUT</a> </li> 
+                        
+                        <li class="current"><a href="/home.html">HOME</a> </li>
+                    </ul>              
+                </nav>
+            </div>
+        </header>
+
+<!--header completed-->
+
+<section id="section11">
+    <div class="container">
+    </div>
+</section>
+
+<section id="section12">
+    <center>
+            <h1>VISUALIZATIONS</h1>
+   
+    <div style="width: 70%;" class="container">
+            
+            <a style="margin: 0;" href="womenViz.html">
+                <h2>1) State Comparisons For Crime Against Women</h2>
+            </a> 
+            <br>
+    </div>
+    <div style="width: 70%;" class="container">
+            <a href="childrenViz.html">
+                <h2>2) State Comparisons For Crime Against Children</h2>
+            </a> 
+            <br>
+    </div>
+    <div style="width: 70%;" class="container">
+            <a href="IPCViz.html">
+                <h2>3) State Comparisons For Crime Against Indian Penal Code(IPC)</h2>
+            </a> 
+    </div>
+</center>
+</section>
+
+    
+
+
+        <footer>
+            <p>Indian Crime Analysis, Copyright &copy; 2018</p>
+            <img src="/static/images/indiagov.png" id="IG">
+
+		</footer>
+	</body>
+
+</html>

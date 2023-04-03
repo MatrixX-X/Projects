@@ -1,0 +1,95 @@
+<!-- data>{% for data in data %}
+	{{ data }}
+	<br>
+{% endfor %}
+-->
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{C_type}} in {{state}} upto year {{year}} </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"> 
+
+</head>
+
+<body>
+	<center>
+		<center><h3 style="color: red;">{{msg}}</h3></center>
+		<br>
+		<h3>"{{C_type}}" Cases in {{state}} upto Year {{year}}</h3>
+	</center>
+	<div class="container">
+		<canvas id="myChart"></canvas>
+	</div>
+
+
+<script>
+	var ctx = document.getElementById("myChart").getContext('2d');
+	var counts = {{pred_data}};
+	var years = {{ years|safe }};
+	var C_type = "{{C_type|safe}}";
+	console.log(counts)
+	var myChart = new Chart(ctx, {
+  	type: 'bar',
+  	data: {
+        labels:years,
+    	   datasets: [{
+            type: 'bar',
+            label: C_type,
+            data: counts,
+            backgroundColor: 'grey'
+           },{
+            type: 'line',
+            label: C_type,
+            fill: false,
+            borderWidth: 4,
+            data: counts,
+            borderColor: 'red'
+           }]
+  	  },
+	options:{
+		scales: {
+			yAxes: [{
+			scaleLabel: {
+				display: true,
+				labelString: 'Number Of Crimes'
+			},
+			ticks: {
+                  fontColor: "red", // this here
+            },
+			}],
+			xAxes: [{
+			scaleLabel: {
+				display: true,
+				labelString: 'Years'
+			},
+			ticks: {
+                  fontColor: "red", // this here
+            },
+			}]
+		} ,
+		title:{
+			display:true,
+			fontSize:25
+		},
+		legend:{
+			position:'right',
+			labels:{
+				fontColor:'black'
+			}
+		}
+
+	}
+	
+
+	});
+
+  
+</script>
+
+</body>
+
+</html>
+
