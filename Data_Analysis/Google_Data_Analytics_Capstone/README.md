@@ -1,38 +1,28 @@
-<strong>Requirements:</strong><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python, Tableau
-          
-<strong>Dataset:</strong><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loan_data_json (Before), loan_cleaned (After), Logo Image, Final Output (Link to DashBoard)
-      
-<strong>About:</strong><br/>
-	The Blue Bank loan analysis project is a data analysis project focused on analyzing the loan application data of Blue Bank, a fictional bank. The project aims to analyze the data and uncover insights and patterns that can help the bank make better lending decisions.
+## Cyclistic Bike Share Data Analysis
 
-	To perform this analysis, Python and Tableau will be used. Python will be used for data cleaning, manipulation, and preparation, while Tableau will be used for data visualization.
+This repository contains a Python script for analyzing and processing data from the Cyclistic bike share program. The program reads data from multiple CSV files, combines them, and performs various data cleaning, transformation, and analysis tasks. The resulting insights provide valuable information about ride patterns, member types, and trends over time.
 
-	The project involves analyzing a large dataset containing information about borrowers, including financial history, and credit score. The dataset also includes information about the loan, such as the loan amount, interest rate, and repayment term.
+### Requirements
+Python, Tableau
 
-The following steps will be followed in the project:
-
-<strong>Data Collection:</strong> The loan data will be collected from the Blue Bank's database.
-
-<strong>Data Cleaning:</strong> The data will be cleaned to remove duplicates, missing values, and other errors. Python's Pandas library will be used for this task.
-
-<strong>Data Preparation:</strong> The cleaned data will be transformed and prepared for analysis. This step may include feature engineering, normalization, and data aggregation.
-
-<strong>Exploratory Data Analysis:</strong> The data will be explored using statistical and visual methods to identify patterns, trends, and relationships. Python's Matplotlib and Seaborn libraries will be used for this task.
-
-<strong>Data Visualization:</strong> The results of the analysis will be visualized using Tableau. The visualizations will help to communicate the insights and findings to stakeholders.
-
-Some specific tasks that can be performed in the Blue Bank Loan Analysis project include:
-
-Identifying the loan approval rate for different demographics such as gender, age, and income.
-Examining the relationship between credit score and loan approval rate.
-Analyzing the loan repayment behavior of borrowers.
-
-Overall, the Blue Bank Loan Analysis project will provide valuable insights to the bank, which can help it to optimize its lending practices and increase profitability.
+### Dataset
+[Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 
+### Project Overview
 
+1. **Data Loading and Combining:** The script loads ride data from multiple CSV files located in a specified directory. It combines these files into a single DataFrame for further analysis.
 
+2. **Data Cleaning:** The script performs data cleaning operations, including removing missing values, dropping unnecessary columns, and eliminating duplicate rows.
+
+3. **Time-based Analysis:** The script extracts useful insights related to time, such as day of the week, hour of the day, and month of the ride. It calculates the duration of each ride in seconds and categorizes rides as day or night based on the start time.
+
+4. **Descriptive Statistics:** The script calculates descriptive statistics such as the mean and maximum ride length, as well as the mode of day of the week.
+
+5. **Visualizations:** The script creates informative visualizations, including box plots to compare ride lengths by member type and scatter plots to visualize ride length in relation to rideable type.
+
+6. **Temporal Trends:** The script analyzes temporal trends by plotting daily and monthly ride counts over time, providing insights into usage patterns.
+
+7. **Pivot Tables:** Pivot tables are used to summarize data across various dimensions, including average ride length for different member types and average ride length by day of the week and member type. Additionally, ride counts are summarized by day of the week and member type.
 
 
