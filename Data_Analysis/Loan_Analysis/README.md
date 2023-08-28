@@ -1,15 +1,16 @@
-<strong>Requirements:</strong><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python, Tableau
-          
-<strong>Dataset:</strong><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loan_data_json (Before), loan_cleaned (After), Logo Image, Final Output (Link to DashBoard)
-      
-<strong>About:</strong><br/>
-	The Blue Bank loan analysis project is a data analysis project focused on analyzing the loan application data of Blue Bank, a fictional bank. The project aims to analyze the data and uncover insights and patterns that can help the bank make better lending decisions.
+# Loan Data Analysis
 
-	To perform this analysis, Python and Tableau will be used. Python will be used for data cleaning, manipulation, and preparation, while Tableau will be used for data visualization.
+# About the Project
+This project involves analyzing loan data from a JSON file and performing various data transformation, analysis, and visualization tasks using Python. The code reads loan data from a JSON file, processes it, and then generates insights and visualizations related to the loan data.
 
-	The project involves analyzing a large dataset containing information about borrowers, including financial history, and credit score. The dataset also includes information about the loan, such as the loan amount, interest rate, and repayment term.
+# Requirements
+Python, Tableau
+
+# Dataset 
+loan_data_json (Before), loan_cleaned (After), Logo Image, Final Output (Link to DashBoard)
+
+# Project Overview
+The project is a data analysis project focused on analyzing the loan application data. The project aims to analyze the data and uncover insights and patterns that can help the bank make better lending decisions. Python will be used for data cleaning, manipulation, and preparation, while Tableau will be used for data visualization. The project involves analyzing a large dataset containing information about borrowers, including financial history, and credit score. The dataset also includes information about the loan, such as the loan amount, interest rate, and repayment term.
 
 The following steps will be followed in the project:
 
@@ -23,16 +24,9 @@ The following steps will be followed in the project:
 
 <strong>Data Visualization:</strong> The results of the analysis will be visualized using Tableau. The visualizations will help to communicate the insights and findings to stakeholders.
 
-Some specific tasks that can be performed in the Blue Bank Loan Analysis project include:
+[Link to Tableau](https://public.tableau.com/app/profile/abdul.mateen.mulla/viz/LoanAnalysisforBlueBank/BlueBankLoan)
 
-Identifying the loan approval rate for different demographics such as gender, age, and income.
-Examining the relationship between credit score and loan approval rate.
-Analyzing the loan repayment behavior of borrowers.
-
-Overall, the Blue Bank Loan Analysis project will provide valuable insights to the bank, which can help it to optimize its lending practices and increase profitability.
-
-
-
-
+# Result
+![Dashboard](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Loan_Analysis/Dashboard.png)
 
 
