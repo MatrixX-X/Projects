@@ -1,7 +1,12 @@
-<strong>Requirements: </strong><br/>
+# Sales Insights
 
-          
-<strong>Files:</strong><br/>
+# Requirements
+Power BI, MySQL
 
-      
-<strong>About:</strong><br/>
+# Dataset 
+db_dump(SQL scripts)
+
+# Result
+![Dashboard](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Sales_Insights/Dashboard.png)
+
+

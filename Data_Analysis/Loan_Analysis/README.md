@@ -7,7 +7,7 @@ This project involves analyzing loan data from a JSON file and performing variou
 Python, Tableau
 
 # Dataset 
-loan_data_json (Before), loan_cleaned (After), Logo Image, Final Output (Link to DashBoard)
+loan_data_json (Before), loan_cleaned (After)
 
 # Project Overview
 The project is a data analysis project focused on analyzing the loan application data. The project aims to analyze the data and uncover insights and patterns that can help the bank make better lending decisions. Python will be used for data cleaning, manipulation, and preparation, while Tableau will be used for data visualization. The project involves analyzing a large dataset containing information about borrowers, including financial history, and credit score. The dataset also includes information about the loan, such as the loan amount, interest rate, and repayment term.

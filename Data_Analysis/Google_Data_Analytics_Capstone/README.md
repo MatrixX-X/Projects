@@ -1,15 +1,15 @@
-## Cyclistic Bike Share Data Analysis
+# Cyclistic Bike Share Data Analysis
 
 This repository contains a Python script for analyzing and processing data from the Cyclistic bike share program. The program reads data from multiple CSV files, combines them, and performs various data cleaning, transformation, and analysis tasks. The resulting insights provide valuable information about ride patterns, member types, and trends over time.
 
-### Requirements
+## Requirements
 Python, Tableau
 
-### Dataset
+## Dataset
 [Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 
-### Project Overview
+## Project Overview
 
 1. **Data Loading and Combining:** The script loads ride data from multiple CSV files located in a specified directory. It combines these files into a single DataFrame for further analysis.
 
@@ -25,4 +25,11 @@ Python, Tableau
 
 7. **Pivot Tables:** Pivot tables are used to summarize data across various dimensions, including average ride length for different member types and average ride length by day of the week and member type. Additionally, ride counts are summarized by day of the week and member type.
 
+[Link to Notebook](https://www.kaggle.com/abdulmateenmulla)
 
+[Link to Tableau](https://public.tableau.com/app/profile/abdul.mateen.mulla/viz/GoogleAnalyticsCaseStudyBicycleShareAnalysis/Dashboard1)
+
+
+## Result
+
+![Dashboard]()

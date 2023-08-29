@@ -26,21 +26,3 @@ Excel file with links to web pages
 4. Run the script.
 5. Analysis results will be saved in `Output.xlsx`.
 
-### Dependencies
-
-- `requests`: For making HTTP requests to fetch web content.
-- `beautifulsoup4`: For parsing HTML content.
-- `nltk`: The Natural Language Toolkit library for text processing.
-- `openpyxl`: For working with Excel files.
-
-### Usage Example
-
-```python
-python script.py
-```
-
-### Note
-
-This script assumes that the required input files and directories are organized as specified. Please ensure that the necessary dependencies are installed before running the script.
-
-Hope you find this doc helpful :sweat_smile:.

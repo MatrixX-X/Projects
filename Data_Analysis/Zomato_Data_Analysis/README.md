@@ -26,52 +26,42 @@ The project can be divided into several sections:
 ## Analyzing and Visualizing Data
 ### Restaurant Ratings and Distribution
 - Calculating and visualizing the average rating of each restaurant.
-- Creating a histogram to visualize the distribution of average ratings.
 
 ![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/1.png)
+
+- Creating a histogram to visualize the distribution of average ratings.
+
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/2.png)
 
 ### Most Popular Restaurants
 - Visualizing the top restaurant chains in Bangalore based on the number of outlets.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/2.png)
-- Creating pie charts to display the proportion of restaurants accepting online orders and those that don't.
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/3.png)
 
-### Booking Tables
-- Creating a pie chart to display the ratio of restaurants that provide table booking and those that don't.
-
-### Types of Restaurants
-- Analyzing the types of restaurants using bar plots, revealing the dominance of "Quick Bites" type restaurants.
-
-### Highest Voted Restaurants
-- Displaying the bar chart of the highest-voted restaurants.
 
 ### Restaurants Across Different Locations
 - Displaying the top 10 locations with the most number of restaurants using various visualization methods.
 
-### Cuisines Analysis
-- Analyzing the top cuisines and displaying them using a bar plot.
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/4.png)
 
 ### Approximate Cost Analysis
 - Analyzing and visualizing the approximate cost for two people using histograms and scatter plots.
-- Comparing the votes and costs for restaurants accepting online orders and those that don't.
+
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/5.png)
+
 
 ### Luxury and Budget Restaurants
 - Displaying the most expensive and cheapest restaurants using bar plots.
 
-### Affordable and Highly Rated Restaurants
-- Identifying affordable and highly rated restaurants.
-- Analyzing and visualizing such restaurants based on ratings and costs.
-
-### Geographic Analysis
-- Obtaining latitude and longitude coordinates for each restaurant location in Bangalore.
-- Creating a heatmap to visualize the concentration of restaurants across the city.
-
-### Geographic Analysis of North Indian Restaurants
-- Creating a heatmap specifically for North Indian restaurants' locations.
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/6.png)
 
 ### Analysis of Restaurant Reviews
 - Analyzing and visualizing reviews from restaurant reviews_list using word clouds.
 
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/7.png)
+
 ### Functionality for Further Analysis
 - Creating functions to generate word clouds for restaurant reviews and dish likes based on the restaurant type.
+
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/8.png)
 

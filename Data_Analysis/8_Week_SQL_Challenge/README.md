@@ -1,38 +1,21 @@
-<strong>Requirements:</strong><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python, Tableau
-          
-<strong>Dataset:</strong><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loan_data_json (Before), loan_cleaned (After), Logo Image, Final Output (Link to DashBoard)
-      
-<strong>About:</strong><br/>
-	The Blue Bank loan analysis project is a data analysis project focused on analyzing the loan application data of Blue Bank, a fictional bank. The project aims to analyze the data and uncover insights and patterns that can help the bank make better lending decisions.
+# 8-Week SQL Challenges
 
-	To perform this analysis, Python and Tableau will be used. Python will be used for data cleaning, manipulation, and preparation, while Tableau will be used for data visualization.
+This repository serves as the solution for the 8 case studies from the **[#8WeekSQLChallenge](https://8weeksqlchallenge.com)**. 
 
-	The project involves analyzing a large dataset containing information about borrowers, including financial history, and credit score. The dataset also includes information about the loan, such as the loan amount, interest rate, and repayment term.
+It showcases my ability to tackle various SQL challenges and demonstrates my proficiency in SQL query writing and problem-solving skills.
 
-The following steps will be followed in the project:
+A special thanks to [Data with Danny](https://www.linkedin.com/company/datawithdanny/) for creating these insightful and engaging SQL case studies! 👋🏻 
 
-<strong>Data Collection:</strong> The loan data will be collected from the Blue Bank's database.
+## 📚 Table of Contents
 
-<strong>Data Cleaning:</strong> The data will be cleaned to remove duplicates, missing values, and other errors. Python's Pandas library will be used for this task.
-
-<strong>Data Preparation:</strong> The cleaned data will be transformed and prepared for analysis. This step may include feature engineering, normalization, and data aggregation.
-
-<strong>Exploratory Data Analysis:</strong> The data will be explored using statistical and visual methods to identify patterns, trends, and relationships. Python's Matplotlib and Seaborn libraries will be used for this task.
-
-<strong>Data Visualization:</strong> The results of the analysis will be visualized using Tableau. The visualizations will help to communicate the insights and findings to stakeholders.
-
-Some specific tasks that can be performed in the Blue Bank Loan Analysis project include:
-
-Identifying the loan approval rate for different demographics such as gender, age, and income.
-Examining the relationship between credit score and loan approval rate.
-Analyzing the loan repayment behavior of borrowers.
-
-Overall, the Blue Bank Loan Analysis project will provide valuable insights to the bank, which can help it to optimize its lending practices and increase profitability.
-
-
-
-
+Please find the solution links for the case studies below. Simply click on the links to access each solution.
+- [Case Study #1: Danny's Diner](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%231%20-%20Danny's%20Diner/README.md)
+- [Case Study #2: Pizza Runner](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/README.md)
+- [Case Study #3: Foodie-Fi](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/README.md)
+- [Case Study #4: Data Bank](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%234%20-%20Data%20Bank/README.md)
+- [Case Study #5: Data Mart](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%235%20-%20Data%20Mart/README.md)
+- [Case Study #6: Clique Bait](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%236%20-%20Clique%20Bait/README.md)
+- [Case Study #7: Balanced Tree](https://github.com/katiehuangx/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co.)
+- [Case Study #8: Fresh Segments](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%238%3A%20Fresh%20Segments/README.md)
 
 
