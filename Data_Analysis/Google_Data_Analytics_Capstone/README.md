@@ -32,4 +32,4 @@ Python, Tableau
 
 ## Result
 
-![Dashboard]()
+![Dashboard](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Google_Data_Analytics_Capstone/Dashboard.png)
