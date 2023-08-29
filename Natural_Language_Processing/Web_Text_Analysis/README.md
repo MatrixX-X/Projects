@@ -26,3 +26,8 @@ Excel file with links to web pages
 4. Run the script.
 5. Analysis results will be saved in `Output.xlsx`.
 
+# Result
+
+![Before](https://github.com/MatrixX-X/Projects/blob/main/Natural_Language_Processing/Web_Text_Analysis/images/Before.png)
+
+![After](https://github.com/MatrixX-X/Projects/blob/main/Natural_Language_Processing/Web_Text_Analysis/images/After.png)
