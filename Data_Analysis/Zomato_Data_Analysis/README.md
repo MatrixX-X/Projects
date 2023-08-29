@@ -27,41 +27,41 @@ The project can be divided into several sections:
 ### Restaurant Ratings and Distribution
 - Calculating and visualizing the average rating of each restaurant.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/1.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/1.png)
 
 - Creating a histogram to visualize the distribution of average ratings.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/2.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/2.png)
 
 ### Most Popular Restaurants
 - Visualizing the top restaurant chains in Bangalore based on the number of outlets.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/3.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/3.png)
 
 
 ### Restaurants Across Different Locations
 - Displaying the top 10 locations with the most number of restaurants using various visualization methods.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/4.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/4.png)
 
 ### Approximate Cost Analysis
 - Analyzing and visualizing the approximate cost for two people using histograms and scatter plots.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/5.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/5.png)
 
 
 ### Luxury and Budget Restaurants
 - Displaying the most expensive and cheapest restaurants using bar plots.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/6.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/6.png)
 
 ### Analysis of Restaurant Reviews
 - Analyzing and visualizing reviews from restaurant reviews_list using word clouds.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/7.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/7.png)
 
 ### Functionality for Further Analysis
 - Creating functions to generate word clouds for restaurant reviews and dish likes based on the restaurant type.
 
-![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/8.png)
+![1](https://github.com/MatrixX-X/Projects/blob/main/Data_Analysis/Zomato_Data_Analysis/images/8.png)
 
