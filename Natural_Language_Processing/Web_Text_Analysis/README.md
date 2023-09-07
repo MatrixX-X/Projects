@@ -27,7 +27,9 @@ Excel file with links to web pages
 5. Analysis results will be saved in `Output.xlsx`.
 
 # Result
+### Before
 
 ![Before](https://github.com/MatrixX-X/Projects/blob/main/Natural_Language_Processing/Web_Text_Analysis/images/Before.png)
 
+### After
 ![After](https://github.com/MatrixX-X/Projects/blob/main/Natural_Language_Processing/Web_Text_Analysis/images/After.png)
