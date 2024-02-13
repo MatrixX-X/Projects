@@ -13,6 +13,9 @@ langchain = "*"
 python-dotenv = "*"
 langchainhub = "*"
 google-search-results = "*"
+tweepy = "*"
+ntscraper = "*"
+pandas = "*"
 
 [dev-packages]
 
