@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-langchain-community = "*"
 openai = "*"
 langchain-openai = "*"
 black = "*"
@@ -16,6 +15,7 @@ google-search-results = "*"
 tweepy = "*"
 ntscraper = "*"
 pandas = "*"
+langchain-community = "*"
 
 [dev-packages]
 
