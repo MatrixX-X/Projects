@@ -16,6 +16,9 @@ tweepy = "*"
 ntscraper = "*"
 pandas = "*"
 langchain-community = "*"
+flask = "*"
+pinecone-client = "*"
+tiktoken = "*"
 
 [dev-packages]
 

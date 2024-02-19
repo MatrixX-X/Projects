@@ -1,69 +1,59 @@
-from dotenv import load_dotenv
-
-load_dotenv()
-
-from langchain.prompts import PromptTemplate
-from langchain_openai import ChatOpenAI
-from langchain.chains import LLMChain
-
-from third_parties.linkedin import scrape_linkedin_profile
+from typing import Tuple
 from agents.linkedin_agent_lookup import lookup as linkedin_agent_lookup
+from agents.twitter_agent_lookup import lookup as twitter_agent_lookup
+from chains.custom_chains import (
+    get_summary_chain,
+    get_interests_chain,
+    get_ice_breaker_chain,
+)
+from third_parties.linkedin import scrape_linkedin_profile
 
 from third_parties.twitter import scrape_user_tweets
-from agents.twitter_agent_lookup import lookup as twitter_agent_lookup
-
-from typing import Tuple
-from Linkedin_Twitter_Processing.output_parsers import person_intel_parser, PersonIntel
-
-information = """
-Abdul Kalam Ghulam Muhiyuddin Ahmed bin Khairuddin Al-Hussaini Azad ((listenⓘ); 11 November 1888 – 22 February 1958) was an Indian independence activist, writer and a senior leader of the Indian National Congress. Following India's independence, he became the First Minister of Education in the Indian government. He is commonly remembered as Maulana Azad; the word Maulana is an honorific meaning 'Our Master' and he had adopted Azad (Free) as his pen name. His contribution to establishing the education foundation in India is recognised by celebrating his birthday as National Education Day across India.[2][3]
-
-As a young man, Azad composed poetry in Urdu, as well as treatises on religion and philosophy. He rose to prominence through his work as a journalist, publishing works critical of the British Raj and espousing the causes of Indian nationalism. Azad became the leader of the Khilafat Movement, during which he came into close contact with the Indian leader Mahatma Gandhi. After the failure of the Khilafat Movement, he became closer to the Congress.[4] Azad became an enthusiastic supporter of Gandhi's ideas of non-violent civil disobedience, and worked to organise the non-co-operation movement in protest of the 1919 Rowlatt Acts. Azad committed himself to Gandhi's ideals, including promoting Swadeshi (indigenous) products and the cause of Swaraj (Self-rule) for India. In 1923, at an age of 35, he became the youngest person to serve as the President of the Indian National Congress.
-"""
+from output_parsers import (
+    summary_parser,
+    topics_of_interest_parser,
+    ice_breaker_parser,
+    Summary,
+    IceBreaker,
+    TopicOfInterest,
+)
 
 
-def ice_break(name: str) -> PersonIntel:
-
-    linkedin_profile_url = linkedin_agent_lookup(name=name)  # name = name
-    linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_profile_url)
+def ice_break(name: str) -> Tuple[Summary, IceBreaker, TopicOfInterest, str]:
+    linkedin_username = linkedin_agent_lookup(name=name)
+    linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_username)
 
     twitter_username = twitter_agent_lookup(name=name)
-    tweets = scrape_user_tweets(username=twitter_username, num_tweets=2)
+    tweets = scrape_user_tweets(username=twitter_username)
 
-    summary_template = """
-         given the Linkedin information {linkedin_information} and twitter {twitter_information} about a person from I want you to create:
-         1. a short summary
-         2. two interesting facts about them
-         3. A topic that may interest them
-         4. 2 creative Ice breakers to open a conversation with them
-        \n{format_instructions}
-     """
-
-    prompt = PromptTemplate(
-        input_variables=["linkedin_information", "twitter_information"],
-        template=summary_template,
-        partial_variables={
-            "format_instructions": person_intel_parser.get_format_instructions()
-        },
+    summary_chain = get_summary_chain()
+    summary_and_facts = summary_chain.run(
+        information=linkedin_data, twitter_posts=tweets
     )
+    summary_and_facts = summary_parser.parse(summary_and_facts)
 
-    llm = ChatOpenAI(temperature=1, model="gpt-3.5-turbo")
+    interests_chain = get_interests_chain()
+    interests = interests_chain.run(information=linkedin_data, twitter_posts=tweets)
+    interests = topics_of_interest_parser.parse(interests)
 
-    chain = LLMChain(llm=llm, prompt=prompt)
+    ice_breaker_chain = get_ice_breaker_chain()
+    ice_breakers = ice_breaker_chain.run(
+        information=linkedin_data, twitter_posts=tweets
+    )
+    ice_breakers = ice_breaker_parser.parse(ice_breakers)
 
-    # returns whole result
-    res = chain.invoke(
-        input={"linkedin_information": linkedin_data, "twitter_information": tweets}
+    return (
+        summary_and_facts,
+        interests,
+        ice_breakers,
+        linkedin_data.get("profile_pic_url"),
     )
 
     # # Pass the required input to the invoke method
     # result = chain.invoke({"information": linkedin_data})
     #
     # Access and print the 'text' part from the result
-    return person_intel_parser.parse(res["text"])
 
 
 if __name__ == "__main__":
-    print("Hello LangChain!")
-    result = ice_break(name="Eden Marco")  # Jason Raisleger
-    print(result)
+    pass
