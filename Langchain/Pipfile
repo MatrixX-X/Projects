@@ -19,6 +19,8 @@ langchain-community = "*"
 flask = "*"
 pinecone-client = "*"
 tiktoken = "*"
+pypdf = "*"
+faiss-cpu = "*"
 
 [dev-packages]
 
