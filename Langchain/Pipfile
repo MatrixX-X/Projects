@@ -21,6 +21,17 @@ pinecone-client = "*"
 tiktoken = "*"
 pypdf = "*"
 faiss-cpu = "*"
+beautifulsoup4 = "*"
+unstructured = "*"
+nltk = "*"
+fastapi = "*"
+jinja2 = "*"
+uvicorn = "*"
+streamlit = "*"
+streamlit-chat = "*"
+tqdm = "*"
+langchain-experimental = "*"
+qrcode = "*"
 
 [dev-packages]
 

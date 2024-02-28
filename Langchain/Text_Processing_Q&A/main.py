@@ -11,20 +11,20 @@ from langchain.chains import RetrievalQA
 from langchain_openai import OpenAI
 
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-spec = PodSpec(environment="gcp-starter")
+spec = PodSpec(environment="gcp-starter")  # not necessary
 index_name = "medium-blogs-embeddings-index"
-index = pc.Index(index_name)
+index = pc.Index(index_name)  # not necessary
 
 
 if __name__ == "__main__":
     print("Hello VectorStore")
     loader = TextLoader(
-        r"C:\Users\Abdul Mateen\Desktop\Udmey\2.17-1001\Medium_Analyzer\mediumblogs\mediumblog1.txt",
+        r"C:\Users\Abdul Mateen\Desktop\Udmey\2.17-1001\Medium_Analyzer\mediumblogs\mediumblog1.txt",  # add your own text path
         encoding="utf-8",
     )
     document = loader.load()
 
-    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=30)
     texts = text_splitter.split_documents(document)
     print(len(texts))
     embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
